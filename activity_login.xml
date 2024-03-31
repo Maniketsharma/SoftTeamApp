@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AB898A91"
+    tools:context=".login">
+
+    <!-- Logo Image -->
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="295dp"
+        android:layout_height="268dp"
+        android:background="@drawable/logo"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Register Form Layout -->
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="425dp"
+        android:layout_height="682dp"
+        android:background="@drawable/round"
+        android:backgroundTint="#F8F1F1"
+        android:orientation="vertical"
+        android:padding="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/welcome_to_softteam_app"
+            android:textAllCaps="true"
+            android:textColor="#D80A25EA"
+            android:textSize="48sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/l_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/round"
+            android:backgroundTint="@color/white"
+            android:hint="Mobile Number"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLines="1"
+            android:paddingStart="20dp"
+            android:paddingEnd="0dp"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/l_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/round"
+            android:backgroundTint="@color/white"
+            android:hint="@string/password"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:paddingStart="20dp"
+            android:paddingEnd="0dp"
+            android:textSize="16sp" />
+
+        <!-- Register Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round"
+            android:backgroundTint="#BC402CF8"
+            android:text="@string/login_now"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="379dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="@string/account" />
+
+        <TextView
+            android:id="@+id/l_registerNowBtn"
+            android:layout_width="372dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:textAlignment="center"
+            android:text="@string/register_now"
+            android:textColor="@color/theme_color"
+            android:textStyle="bold" />
+
+
+        <!-- Progress Bar (Circular) -->
+        <ProgressBar
+            android:id="@+id/progress_circular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
